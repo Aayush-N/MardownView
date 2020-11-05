@@ -25,7 +25,6 @@ class App extends React.Component{
               }}
               onChange={(editor, data, value) => {
                 const md = Marked(value);
-                console.log(md)
                 this.setState({markdown: md})
               }}
             />
