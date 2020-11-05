@@ -8,11 +8,10 @@ import text from './dummyText.js';
 class App extends React.Component{
     constructor() {
       super();
-      this.state = {markdown: ''}
+      this.state = {markdown: Marked(text)}
     }
 
     render(){
-      const dummyText = ""
       return (
         <div>
           <div className="left">
