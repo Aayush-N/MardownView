@@ -1,25 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import { UnControlled as CodeMirror } from 'react-codemirror2'
+import Marked from 'marked'
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends React.Component{
+    constructor() {
+      super();
+      this.state = {markdown: ''}
+    }
+
+    render(){
+      return (
+        <div>
+          <div className="left">
+            <CodeMirror
+              value='<h1>I ♥ react-codemirror2</h1>'
+              options={{
+                mode: 'markdown',
+                theme: 'material',
+                lineNumbers: true,
+              }}
+              onChange={(editor, data, value) => {
+                const md = Marked(value);
+                console.log(md)
+                this.setState({markdown: md})
+              }}
+            />
+          </div>
+          <div className="right" dangerouslySetInnerHTML={{__html: this.state.markdown}} >
+          </div>
+        </div>
+    );
+    }
+    
 }
 
 export default App;
