@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/MardownView/static/css/main.e1c593df.chunk.css",
+    "main.js": "/MardownView/static/js/main.e7ea0f39.chunk.js",
+    "main.js.map": "/MardownView/static/js/main.e7ea0f39.chunk.js.map",
+    "runtime-main.js": "/MardownView/static/js/runtime-main.c631d9f3.js",
+    "runtime-main.js.map": "/MardownView/static/js/runtime-main.c631d9f3.js.map",
+    "static/css/2.23249a66.chunk.css": "/MardownView/static/css/2.23249a66.chunk.css",
+    "static/js/2.05323bb7.chunk.js": "/MardownView/static/js/2.05323bb7.chunk.js",
+    "static/js/2.05323bb7.chunk.js.map": "/MardownView/static/js/2.05323bb7.chunk.js.map",
+    "static/js/3.4c4648e4.chunk.js": "/MardownView/static/js/3.4c4648e4.chunk.js",
+    "static/js/3.4c4648e4.chunk.js.map": "/MardownView/static/js/3.4c4648e4.chunk.js.map",
+    "index.html": "/MardownView/index.html",
+    "static/css/2.23249a66.chunk.css.map": "/MardownView/static/css/2.23249a66.chunk.css.map",
+    "static/css/main.e1c593df.chunk.css.map": "/MardownView/static/css/main.e1c593df.chunk.css.map",
+    "static/js/2.05323bb7.chunk.js.LICENSE.txt": "/MardownView/static/js/2.05323bb7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c631d9f3.js",
+    "static/css/2.23249a66.chunk.css",
+    "static/js/2.05323bb7.chunk.js",
+    "static/css/main.e1c593df.chunk.css",
+    "static/js/main.e7ea0f39.chunk.js"
+  ]
+}
