@@ -2,6 +2,7 @@ import './App.css';
 import { UnControlled as CodeMirror } from 'react-codemirror2'
 import Marked from 'marked'
 import React from 'react';
+import text from './dummyText.js';
 
 
 class App extends React.Component{
@@ -11,11 +12,13 @@ class App extends React.Component{
     }
 
     render(){
+      const dummyText = ""
       return (
         <div>
           <div className="left">
+          <div id="topnav">Enter markdown text below</div>
             <CodeMirror
-              value='<h1>I ♥ react-codemirror2</h1>'
+              value={text}
               options={{
                 mode: 'markdown',
                 theme: 'material',
@@ -28,7 +31,9 @@ class App extends React.Component{
               }}
             />
           </div>
-          <div className="right" dangerouslySetInnerHTML={{__html: this.state.markdown}} >
+          <div className="right" >
+          <div id="topnav">Markdown Preview</div>
+          <div dangerouslySetInnerHTML={{__html: this.state.markdown}}></div>
           </div>
         </div>
     );

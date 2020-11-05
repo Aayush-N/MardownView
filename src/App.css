@@ -15,4 +15,15 @@ html, body {
    float: right;
    width: 50%;
    justify-content: true;
+   overflow: scroll;
+   height: 100vh !important;
+}
+
+#topnav {
+  background-color: #00838f;
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #eee;
+  padding: 2%;
 }
